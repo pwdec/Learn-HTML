@@ -1,0 +1,173 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>HTML Tables | Pwdec</title>
+  </head>
+<body>
+    
+    
+<h1><center>Topics</center></h1>
+
+<b>
+  <br>   <a href="#tables">• HTML Tables</a>
+ <br>      <a href="#borders">• HTML Borders</a>
+  <br>     <a href="#sizes">• HTML Sizes</a>
+    <br>   <a href="#headers">• HTML Headers</a>
+     <br>  <a href="#padding_spacing">• HTML Table Padding & Spacing</a>
+    <br>   <a href="#spans">• HTML Table Colspan & Rowspan</a>
+    <br>   <a href="#styling">• HTML Styling</a>
+     <br>  
+     
+</b>
+
+    <hr>
+    <h2 id="tables"><center>Tables</center></h2>
+   
+    <table>
+        
+     <tr>
+        <th>Turkey</th>
+        <th>India</th>
+        <th>USA</th>
+        <th>Russia</th>
+     </tr>
+        
+        <tr>
+            <td>T</td>
+            <td>I</td>
+            <td>U</td>
+            <td>R</td>
+        </tr>
+        
+        
+    </table>
+    <hr>
+    
+    
+    <h2 id="borders"><center>Borders</center></h2>
+    
+    
+<style>
+    
+    table, th, td {
+  border: 1px solid black;
+}
+
+</style>
+<hr>
+
+<h2 id="Sizes"></h2>
+    
+    <table>
+        
+     <tr style="width:70%;">
+        <th style="height:100%;">Turkey</th>
+        <th>India</th>
+        <th>USA</th>
+        <th>Russia</th>
+     </tr>
+        
+        <tr>
+            <td colspan="2">T</td>
+            <td>I</td>
+            <td>U</td>
+            <td>R</td>
+        </tr>
+        
+        
+    </table>
+    <hr>
+<center><h2 id="headers">Headers</h2></center>
+    
+    <table style="width:100%">
+  <caption>Monthly savings</caption>
+  <tr>
+    <th>Month</th>
+    <th>Savings</th>
+  </tr>
+  <tr>
+    <td>January</td>
+    <td>$100</td>
+  </tr>
+  <tr>
+    <td>February</td>
+    <td>$50</td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th>Firstname</th>
+    <td>Jill</td>
+    <td>Eve</td>
+  </tr>
+  <tr>
+    <th>Lastname</th>
+    <td>Smith</td>
+    <td>Jackson</td>
+  </tr>
+  <tr>
+    <th>Age</th>
+    <td>94</td>
+    <td>50</td>
+  </tr>
+</table>
+    <hr>
+   <center><h2 id="padding_spacing">Table Padding & Spacing</h2></center>
+    
+    <style>th, td {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 40px;
+}</style>
+    <hr>
+    
+   <center> <h2 id=spans>Table Colspan & Rowspan</h2></center>
+    
+    <table>
+  <tr>
+    <th colspan="2">Name</th>
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>43</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>57</td>
+  </tr>
+</table>
+
+
+    <table>
+  <tr>
+    <th>Name</th>
+    <td>Jill</td>
+  </tr>
+  <tr>
+    <th rowspan="2">Phone</th>
+    <td>555-1234</td>
+  </tr>
+  <tr>
+    <td>555-8745</td>
+</tr>
+</table>
+<hr>
+
+    <center><h2 id="styling">Styling</h2></center>
+    <style>
+    
+td:nth-child(even), th:nth-child(even) {
+  background-color: #D6EEEE;
+}
+
+</style><hr>
+
+
+</body>
