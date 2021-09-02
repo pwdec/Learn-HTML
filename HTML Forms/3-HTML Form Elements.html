@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>HTML Form Elements | Pwdec</title>
+</head>
+<body>
+ <hr>
+ 
+ <label for="cars">Choose a car:</label>
+<select id="cars" size="78" name="cars" multiple>
+  <option value="volvo">Volvo</option>
+  <option value="saab">Saab</option>
+  <option value="fiat">Fiat</option>
+  <option value="audi">Audi</option>
+  <option value="tofas" selected>Tofaş</option>
+</select>
+
+<hr><br>
+<textarea name="message" rows="10" cols="30">
+The cat was playing in the garden.
+</textarea>
+
+<br>
+
+<textarea name="message" style="width:200px; height:600px;">
+The cat was playing in the garden.
+</textarea>
+
+<hr>
+<button type="button" onclick="alert(document.cookie)">Your Cookie!</button>
+
+<hr><br>
+<form action="/action_page.php">
+  <fieldset>
+    <legend>Personalia:</legend>
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname" value="John"><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname" value="Doe"><br><br>
+    <input type="submit" value="Submit">
+  </fieldset>
+</form>
+<hr><br>
+
+<form action="/action_page.php">
+  <input list="browsers">
+  <datalist id="browsers">
+    <option value="Internet Explorer">
+    <option value="Firefox">
+    <option value="Chrome">
+    <option value="Opera">
+    <option value="Safari">
+  </datalist>
+</form>
+
+<hr><br>
+<form action="/action_page.php"
+  oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+  0
+  <input type="range"  id="a" name="a" value="50">
+  100 +
+  <input type="number" id="b" name="b" value="50">
+  =
+  <output name="x" for="a b"></output>
+  <br><br>
+  <input type="submit">
+</form>
+
+ 
+ 
+ 
+</body>
+</html>

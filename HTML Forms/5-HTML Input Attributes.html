@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>HTML Attributes | Pwdec</title>
+</head>
+<body>
+ 
+ <form>
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="John"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe">
+</form>
+
+
+
+<form>
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="John" readonly><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe">
+</form>
+
+
+ <form>
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="John" disabled><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe">
+</form>
+
+
+<form>
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" size="50"><br>
+  <label for="pin">PIN:</label><br>
+  <input type="text" id="pin" name="pin" size="4">
+</form>
+
+<form>
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" size="50"><br>
+  <label for="pin">PIN:</label><br>
+  <input type="text" id="pin" name="pin" maxlength="4" size="4">
+</form>
+
+
+
+HTML Input Attributes
+This chapter describes the different attributes for the HTML <input> element.
+
+The value Attribute
+The input value attribute specifies an initial value for an input field:
+
+Example
+Input fields with initial (default) values:
+
+<form>
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="John"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe">
+</form>
+The readonly Attribute
+The input readonly attribute specifies that an input field is read-only.
+
+A read-only input field cannot be modified (however, a user can tab to it, highlight it, and copy the text from it).
+
+The value of a read-only input field will be sent when submitting the form!
+
+Example
+A read-only input field:
+
+<form>
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="John" readonly><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe">
+</form>
+The disabled Attribute
+The input disabled attribute specifies that an input field should be disabled.
+
+A disabled input field is unusable and un-clickable.
+
+The value of a disabled input field will not be sent when submitting the form!
+
+Example
+A disabled input field:
+
+<form>
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="John" disabled><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe">
+</form>
+ADVERTISEMENT
+
+The size Attribute
+The input size attribute specifies the visible width, in characters, of an input field.
+
+The default value for size is 20.
+
+Note: The size attribute works with the following input types: text, search, tel, url, email, and password.
+
+Example
+Set a width for an input field:
+
+<form>
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" size="50"><br>
+  <label for="pin">PIN:</label><br>
+  <input type="text" id="pin" name="pin" size="4">
+</form>
+The maxlength Attribute
+The input maxlength attribute specifies the maximum number of characters allowed in an input field.
+
+Note: When a maxlength is set, the input field will not accept more than the specified number of characters. However, this attribute does not provide any feedback. So, if you want to alert the user, you must write JavaScript code.
+
+Example
+Set a maximum length for an input field:
+
+<form>
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" size="50"><br>
+  <label for="pin">PIN:</label><br>
+  <input type="text" id="pin" name="pin" maxlength="4" size="4">
+</form>
+The min and max Attributes
+The input min and max attributes specify the minimum and maximum values for an input field.
+
+The min and max attributes work with the following input types: number, range, date, datetime-local, month, time and week.
+
+Tip: Use the max and min attributes together to create a range of legal values.
+
+Example
+Set a max date, a min date, and a range of legal values:
+
+<form>
+  <label for="datemax">Enter a date before 1980-01-01:</label>
+  <input type="date" id="datemax" name="datemax" max="1979-12-31"><br><br>
+
+  <label for="datemin">Enter a date after 2000-01-01:</label>
+  <input type="date" id="datemin" name="datemin" min="2000-01-02"><br><br>
+
+  <label for="quantity">Quantity (between 1 and 5):</label>
+  <input type="number" id="quantity" name="quantity" min="1" max="5">
+</form>
+
+
+<form>
+  <label for="files">Select files:</label>
+  <input type="file" id="files" name="files" multiple>
+</form>
+
+
+<form>
+  <label for="country_code">Country code:</label>
+  <input type="text" id="country_code" name="country_code"
+  pattern="[A-Za-z]{3}" title="Three letter country code">
+</form>
+
+
+<form>
+  <label for="phone">Enter a phone number:</label>
+  <input type="tel" id="phone" name="phone"
+  placeholder="123-45-678"
+  pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+</form>
+
+<form>
+  <label for="username">Username:</label>
+  <input type="text" id="username" name="username" required>
+</form>
+
+
+<form>
+  <label for="points">Points:</label>
+  <input type="number" id="points" name="points" step="3">
+</form>
+
+
+
+<form>
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" autofocus><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname">
+</form>
+
+
+<form>
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <label for="lname">Last name:</label>
+  <input type="text" id="lname" name="lname"><br><br>
+  <input type="image" src="img_submit.gif" alt="Submit" width="48" height="48">
+</form>
+
+
+<form>
+  <input list="browsers">
+  <datalist id="browsers">
+    <option value="Internet Explorer">
+    <option value="Firefox">
+    <option value="Chrome">
+    <option value="Opera">
+    <option value="Safari">
+  </datalist>
+</form>
+
+
+<form action="/action_page.php" autocomplete="on">
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <label for="lname">Last name:</label>
+  <input type="text" id="lname" name="lname"><br><br>
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" autocomplete="off"><br><br>
+  <input type="submit" value="Submit">
+</form>
+ 
+ 
+ 
+</body>
+</html>
